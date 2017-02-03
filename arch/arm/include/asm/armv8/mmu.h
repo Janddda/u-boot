@@ -77,6 +77,7 @@
  */
 #define PMD_ATTRINDX(t)		((t) << 2)
 #define PMD_ATTRINDX_MASK	(7 << 2)
+#define PMD_ATTRMASK		(PTE_BLOCK_PXN | PTE_BLOCK_UXN | PMD_ATTRINDX_MASK)
 
 /*
  * TCR flags.
